@@ -1,0 +1,242 @@
+/* @import url('https://fonts.googleapis.com/css?family=Space+Mono'); */
+
+@font-face {
+  font-family: sm;
+  src: url(fonts/SpaceMono-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: sm;
+  src: url(fonts/SpaceMono-Bold.ttf);
+  font-weight: bold;
+}
+
+body{
+  font-family: -apple-system,BlinkMacSystemFont , "Helvetica Neue", "PingFang SC", "Noto Sans" , "Noto Sans CJK SC" , sans-serif;
+  color: #402E29;
+  font-size: 15px;
+  letter-spacing: -0.01rem;
+  font-synthesis: style;
+}
+.sidebar{
+  padding: 0;
+}
+.sidebar-nav{
+  padding: 80px 0 0;
+  background: url(images/logo-mvl.svg) no-repeat;
+  background-size: 170px 36px;
+  background-position: center 100px;
+  font-family: sm;
+}
+
+.sidebar-nav ul{
+  padding-top: 120px;
+}
+
+.sidebar ul li a{
+  color: #402E29;
+  font-size: 15px;
+  line-height: 2.2;
+}
+
+.sidebar-nav a:hover{
+  text-decoration: none!important;
+}
+
+.sidebar-nav ul li{
+  margin: 6px 0 6px 0px;
+  /* padding-left: 36px; */
+  overflow: visible;
+}
+.sidebar-nav ul li>a{
+  padding-left: 40px;
+}
+
+.sidebar-nav ul li>a:before{
+  content: "→"!important;
+  color: #d5d5d5;
+  display: inline-block;
+  padding-right: 12px;
+  vertical-align: middle;
+}
+
+.sidebar-nav ul li.active>a{
+  background: #402E29;
+  /* display: block; */
+  
+}
+.sidebar ul li.active>a{
+  border-right: 4px solid #49E19A;
+  color: #ffffff;
+
+}
+
+.sidebar-nav .app-sub-sidebar li:before{
+  content: "";
+  padding-right: 4px;
+  float: left
+}
+
+.sidebar-nav .app-sub-sidebar li>a{
+  padding-left: 60px;
+}
+
+.sidebar-nav .app-sub-sidebar ul.children li>a{
+  padding-left: 80px;
+  font-size: 13px;
+}
+
+/* .sidebar-nav .app-sub-siebar li.active a{
+  color: #ffffff;
+  /* padding-left: 30px; */
+} */
+
+/* .sidebar-nav ul li a:before{
+  font-family: "Space Mono";
+  content: "->";
+  display: inline-block;
+  padding-right: 0px;
+  vertical-align: middle;
+  padding-left: -20px;
+} */
+
+.sidebar-nav ul li a:before{
+  /* font-family: "Space Mono"; */
+  
+}
+
+.sidebar-nav ul.children li{
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.sidebar-nav ul.children li a{
+  margin-left: 0;
+  font-size: 0.83em;
+  line-height: 2.2;
+  padding: 4px 0px 4px 20px;
+}
+
+.anchor span{
+  color: #402E29;
+}
+
+.markdown-section a{
+  color: #49E19A;
+  
+}
+
+.markdown-section code,.markdown-section pre>code{
+  font-family:"Roboto Mono", mono;
+  color: #F54154;
+  margin: 0;
+  pad: 1px 4px;
+  font-size: 13px;
+}
+
+.markdown-section p.update{
+  background: #fafafa;
+  padding: 1px 20px;
+  color: #c7c7c7;
+  text-align: right;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px #ededed solid;
+
+}
+
+.markdown-section p.copyright{
+  color: #c7c7c7;
+  text-align: right;
+  font-size: 12px;
+  line-height: 0.2em;
+
+}
+.markdown-section ul li{
+  position: relative;
+  margin-left: -24px;
+}
+
+.markdown-section blockquote{
+  background: #fafafa;
+  padding: 1px 20px;
+  border-color: #49E19A;
+}
+
+ul,li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+.markdown-section p{
+  line-height: 1.988;
+  letter-spacing: -0.02rem;
+}
+
+.markdown-section{
+  word-break: normal;
+  word-wrap: break-word;
+  text-align: justify;
+  max-width: 52vw;
+  padding: 40px 70px;
+}
+.markdown-section em{
+  font-style: normal;
+  color: #402E29;
+  font-weight: bold;
+}
+
+.markdown-section em.s{
+  background: linear-gradient(transparent 70%, rgba(79, 238, 148, 0.801) 70%);
+}
+
+.markdown-section center{
+  font-style: normal;
+  color: rgb(179, 179, 179);
+  font-size: 13px;
+}
+.markdown-section ul li:before{
+  content: "\2022";
+  color: #49E19A;
+  display: block;
+  position: absolute;
+  left: -20px;
+  font-size: 20px
+}
+
+.markdown-section ul{
+  list-style: none;
+}
+
+.markdown-section blockquote p{/*引用*/
+  font-weight: normal;
+}
+
+.markdown-section h1{/*大标题*/
+  margin-top: 30px;
+}
+
+.markdown-section a.b{
+  background: #49E19A;
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  padding: 8px 30px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.markdown-section a.b:hover{
+  background: rgb(49, 197, 123);
+}
+
+@media (max-width: 767px){
+  .markdown-section{
+    max-width: 100%;
+    padding: 60px 30px;
+  }
+}
